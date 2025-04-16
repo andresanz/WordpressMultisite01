@@ -1,0 +1,317 @@
+/**
+ * Theme Name: Twenty Twenty-Five Child
+ * Theme URI: https://wordpress.org/themes/twentytwentyfive/
+ * Description: A customized child theme for Twenty Twenty-Five with Open Sans font and cornsilk as secondary color
+ * Author: Your Name
+ * Author URI: https://yourwebsite.com
+ * Template: twentytwentyfive
+ * Version: 1.0.0
+ * Text Domain: twentytwentyfive-child
+ */
+/* After the theme header comment block */
+
+/* Import Open Sans font if needed as a backup to the enqueued version */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* Override root theme variables */
+:root {
+  --wp--preset--font-family--system-font: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --wp--preset--font-family--primary: 'Open Sans', sans-serif;
+  --wp--preset--color--secondary: cornsilk;
+  --wp--preset--font--base: 1.20em;
+
+  
+  /* Additional color variables for the default style */
+  --wp--preset--color--primary: #0073aa;
+  --wp--preset--color--accent: #0ea5e9;
+  --wp--preset--color--text-main: #333333;
+  --wp--preset--color--light-background: cornsilk;
+}
+
+/* Set Open Sans as default font for body */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--wp--preset--color--text-main);
+  line-height: 1.6;
+  font-size: var(--wp--preset--font--base);
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* this is site title on top left of nav */
+.wp-block-site-title {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: .15em !important;
+}
+
+/* Typography improvements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+/* Link styling */
+a {
+  color: var(--wp--preset--color--primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover, a:focus {
+  color: var(--wp--preset--color--accent);
+  text-decoration: underline;
+}
+
+/* Enhanced button styles */
+.wp-block-button__link {
+  background-color: var(--wp--preset--color--primary);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.wp-block-button__link:hover {
+  background-color: var(--wp--preset--color--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+  color: var(--wp--preset--color--primary);
+  border-color: var(--wp--preset--color--primary);
+  background: transparent;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+  color: var(--wp--preset--color--accent);
+  border-color: var(--wp--preset--color--accent);
+}
+
+/* Custom styles for secondary color (cornsilk) areas */
+.has-secondary-background-color {
+  background-color: cornsilk !important;
+  color: #333;
+  padding: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Block quote styling */
+.wp-block-quote {
+  border-left: 4px solid var(--wp--preset--color--primary);
+  padding-left: 1.5rem;
+  margin-left: 0;
+  font-style: italic;
+}
+
+/* Lists styling */
+ul, ol {
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Table styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+}
+
+table th {
+  background-color: var(--wp--preset--color--light-background);
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Form elements */
+input, textarea, select {
+  font-family: 'Open Sans', sans-serif;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Header and navigation improvements */
+.wp-block-navigation {
+  font-weight: 500;
+  margin-bottom: 0 !important;
+}
+
+.wp-block-navigation a {
+  color: var(--wp--preset--color--text-main);
+}
+
+.wp-block-navigation a:hover {
+  color: var(--wp--preset--color--primary);
+}
+
+/* Footer styling */
+.wp-block-site-info {
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.25rem; }
+  h5 { font-size: 1.1rem; }
+  h6 { font-size: 1rem; }
+}
+
+.wp-block-template-part {
+  background-color: var(--wp--preset--color--light-background);
+  border-bottom: 2px solid lightgrey;
+}
+
+/* Alternative approach */
+body .wp-site-blocks > main {
+  padding-top: 2rem;
+}
+
+/* Site blocks spacing */
+.wp-site-blocks {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Simple Footer Styling */
+footer .wp-block-columns {
+  display: block !important; /* Override any flex or grid display */
+}
+
+footer.wp-block-template-part {
+  background-color: var(--wp--preset--color--light-background);
+  border-top: 2px solid lightgrey;
+  margin-top: 2rem; /* Add space above footer */
+  margin-bottom: 0 !important;
+  padding-bottom: 1rem !important;
+}
+
+footer .wp-block-group {
+  text-align: center;
+}
+
+/* Remove any column gaps */
+footer .wp-block-column {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Make sure footer content stays centered */
+footer .has-text-align-center {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Add a bit of padding to the footer content */
+footer.wp-block-template-part p {
+  padding: 0;
+}
+
+/* Ensure proper spacing above the main content area */
+main, .wp-site-blocks > main {
+  margin-top: 2rem;
+}
+
+/* Fix for left-aligned images breaking out of containers */
+.wp-block-image.alignleft,
+.alignleft {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  max-width: 50%; /* Prevents image from taking up too much width */
+}
+
+/* Ensure images stay within their containers */
+.wp-block-post-content img,
+.entry-content img,
+.wp-block-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add clearfix to container elements to prevent overflow issues */
+.wp-block-post-content::after,
+.entry-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Specific fix for Twenty Twenty-Five theme containers */
+.wp-block-group.is-layout-constrained > * {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Extra specificity for left-aligned images */
+.wp-site-blocks .wp-block-post-content .wp-block-image.alignleft,
+.wp-site-blocks .entry-content .wp-block-image.alignleft {
+  margin-left: 0;
+}
+
+/* Reduce margin under navigation items */
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container,
+.wp-block-navigation-item,
+.wp-block-navigation__container {
+  margin-bottom: 0 !important; /* Removes bottom margin */
+}
+
+/* Adjust vertical spacing in the navigation */
+.wp-block-navigation ul,
+.wp-block-navigation__container {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Target nav items directly */
+.wp-block-navigation-item__content {
+  padding-top: 0.5em !important;    /* Reduce top padding */
+  padding-bottom: 0.5em !important; /* Reduce bottom padding */
+  line-height: 1.2;                 /* Tighter line height */
+}
+
+/* Make sure submenus still have appropriate padding */
+.wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+  padding: 0.5em !important; /* Keep some padding for submenu items */
+}
+
+/* Reduce header spacing */
+header.wp-block-template-part,
+.wp-block-group:first-child {
+  margin-top: 0 !important;
+  padding-top: 1rem !important; /* Adjust this value as needed */
+}
+
+/* Adjust spacing between other elements if needed */
+.wp-block-group {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}

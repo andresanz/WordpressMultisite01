@@ -1,0 +1,34 @@
+/*
+   * Dark Style (dark.css)
+   * Place this in your theme's /styles/dark.css file
+   */
+  
+   :root {
+    --wp--preset--color--primary: #6c5ce7;
+    --wp--preset--color--secondary: cornsilk;
+    --wp--preset--color--foreground: #e0e0e0;
+    --wp--preset--color--background: #222222;
+    --wp--preset--color--tertiary: #333333;
+  }
+  
+  body {
+    background-color: var(--wp--preset--color--background);
+    color: var(--wp--preset--color--foreground);
+  }
+  
+  .wp-site-blocks {
+    background-color: var(--wp--preset--color--background);
+  }
+  
+  a {
+    color: var(--wp--preset--color--secondary);
+  }
+  
+  .wp-block-button__link {
+    background-color: var(--wp--preset--color--primary);
+  }
+  
+  .wp-block-quote {
+    border-left-color: var(--wp--preset--color--secondary);
+  }
+  

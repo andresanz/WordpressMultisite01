@@ -1,0 +1,15 @@
+# Ignore config and sensitive stuff
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backups/
+
+# Ignore system/IDE cruft
+*.log
+.DS_Store
+*.sql
+*.tar.gz
+node_modules/
+vendor/
+.env

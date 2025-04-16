@@ -1,0 +1,53 @@
+/* 
+Theme Name:		 Twenty Twenty-Five Child01
+Theme URI:		 http://childtheme-generator.com/
+Description:	 Twenty Twenty-Five Child01 is a child theme of Twenty Twenty-Five, created by ChildTheme-Generator.com
+Author:			 André Sanz
+Author URI:		 http://childtheme-generator.com/
+Template:		 twentytwentyfive
+Version:		 1.0.0
+Text Domain:	 twentytwentyfive-child01
+*/
+
+/* Navbar Styling */
+.navbar {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 15px 0;
+  }
+  
+  .navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+  
+  .navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    display: inline;
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+  }

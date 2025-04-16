@@ -1,0 +1,89 @@
+/*
+Theme Name: Dre Box Photo Blog
+Theme URI: https://dreisgreat.com/
+Description: A Bootscore child theme with a box-style photo blog layout, category/tag filters, breadcrumbs, Google Fonts, Font Awesome, and Bootstrap support.
+Author: Andre
+Template: bootscore
+Version: 1.7
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Tags: photo blog, grid layout, responsive, Bootstrap, lightbox, filters
+*/
+
+/* Define CSS variables */
+:root {
+    --primary-bg: cornsilk;
+    --footer-border: #ccc;
+}
+
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: var(--primary-bg);
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Editable container (for arbitrary HTML per site) */
+.site-content-container {
+    background-color: var(--primary-bg);
+    padding-top: 15px; /* Only top padding */
+    padding-bottom: 15px; /* Only bottom padding */
+    margin: 0 auto 20px auto; /* Ensure no extra margin on top */
+    text-align: center;
+    border-radius: 10px;
+    max-width: 960px; /* Match Bootstrap container width */
+    box-sizing: border-box; /* Ensure width calculations include padding */
+}
+
+/* Footer styles */
+.footer {
+    background-color: var(--primary-bg);
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 20px;
+    border-top: 3px solid var(--footer-border);
+}
+
+/* Grid styles for posts and sidebar */
+.container {
+    max-width: 960px; /* Match editable content width */
+    margin: auto;
+}
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.photo-grid .photo-item {
+    flex: 1 1 calc(33.333% - 10px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.photo-grid .photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .photo-grid .photo-item {
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-grid .photo-item {
+        flex: 1 1 100%;
+    }
+}

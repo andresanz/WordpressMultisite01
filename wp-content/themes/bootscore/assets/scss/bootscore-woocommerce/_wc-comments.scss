@@ -1,0 +1,17 @@
+/*--------------------------------------------------------------
+WooCommerce Comments
+--------------------------------------------------------------*/
+
+#woo-comments {
+
+  // Nested comments, allow only 1 depth
+  .comment-list > li > .children:first-of-type {
+    padding-left: 96px;
+  }
+
+  // Star rating
+  .star-rating {
+    float: right;
+    margin: 0;
+  }
+}

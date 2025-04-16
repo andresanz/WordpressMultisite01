@@ -1,0 +1,82 @@
+
+  /*
+   * Dark Style (dark.css)
+   * Place this in your theme's /styles/dark.css file
+   */
+  
+  :root {
+    --wp--preset--color--primary: #6c5ce7;
+    --wp--preset--color--secondary: cornsilk;
+    --wp--preset--color--foreground: #e0e0e0;
+    --wp--preset--color--background: #222222;
+    --wp--preset--color--tertiary: #333333;
+  }
+  
+  body {
+    background-color: var(--wp--preset--color--background);
+    color: var(--wp--preset--color--foreground);
+  }
+  
+  .wp-site-blocks {
+    background-color: var(--wp--preset--color--background);
+  }
+  
+  a {
+    color: var(--wp--preset--color--secondary);
+  }
+  
+  .wp-block-button__link {
+    background-color: var(--wp--preset--color--primary);
+  }
+  
+  .wp-block-quote {
+    border-left-color: var(--wp--preset--color--secondary);
+  }
+  
+  /*
+   * Colorful Style (colorful.css)
+   * Place this in your theme's /styles/colorful.css file
+   */
+  
+  :root {
+    --wp--preset--color--primary: #ff6b6b;
+    --wp--preset--color--secondary: cornsilk;
+    --wp--preset--color--foreground: #333333;
+    --wp--preset--color--background: #ffffff;
+    --wp--preset--color--tertiary: #f9fafb;
+    --wp--preset--color--accent-1: #5f27cd;
+    --wp--preset--color--accent-2: #48dbfb;
+    --wp--preset--color--accent-3: #10ac84;
+  }
+  
+  body {
+    background-color: var(--wp--preset--color--background);
+    color: var(--wp--preset--color--foreground);
+  }
+  
+  .site-header {
+    background: linear-gradient(135deg, var(--wp--preset--color--primary) 0%, var(--wp--preset--color--accent-1) 100%);
+    color: white;
+  }
+  
+  .wp-block-button__link {
+    background: linear-gradient(135deg, var(--wp--preset--color--primary) 0%, var(--wp--preset--color--accent-1) 100%);
+    transition: all 0.3s ease;
+  }
+  
+  .wp-block-button__link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .has-secondary-background-color {
+    background-color: cornsilk !important;
+    border-left: 4px solid var(--wp--preset--color--accent-2);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    background: linear-gradient(90deg, var(--wp--preset--color--primary), var(--wp--preset--color--accent-1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }

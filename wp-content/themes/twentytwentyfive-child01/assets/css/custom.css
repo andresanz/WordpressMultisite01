@@ -1,0 +1,46 @@
+/* Custom styles go here */
+.container {
+    max-width: 1200px; /* Adjust main container width */
+  }
+  
+  .site-footer {
+    display: none; /* Hide footer if needed */
+  }
+
+  /* Navbar Styling */
+.navbar {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 15px 0;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+
+.navbar-menu li {
+  display: inline;
+}

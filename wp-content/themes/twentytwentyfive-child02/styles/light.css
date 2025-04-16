@@ -1,0 +1,27 @@
+/* 
+ * Light Style (light.css)
+ * Place this in your theme's /styles/light.css file
+ */
+
+ :root {
+    --wp--preset--color--primary: #4a90e2;
+    --wp--preset--color--secondary: cornsilk;
+    --wp--preset--color--foreground: #444444;
+    --wp--preset--color--background: #fafafa;
+    --wp--preset--color--tertiary: #f5f5f5;
+  }
+  
+  body {
+    background-color: var(--wp--preset--color--background);
+    color: var(--wp--preset--color--foreground);
+  }
+  
+  .wp-block-button__link {
+    background-color: var(--wp--preset--color--primary);
+  }
+  
+  .wp-block-button.is-style-outline .wp-block-button__link {
+    color: var(--wp--preset--color--primary);
+    border-color: var(--wp--preset--color--primary);
+  }
+  

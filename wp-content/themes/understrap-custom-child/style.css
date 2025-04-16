@@ -1,0 +1,32 @@
+/*
+Theme Name: Understrap Custom Child
+Theme URI: https://example.com/
+Description: A custom child theme for Understrap.
+Author: Andre
+Author URI: https://yourwebsite.com/
+Template: understrap
+Version: 1.0.0
+*/
+
+header, main, footer {
+    background-color: cornsilk;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.navbar, .footer {
+    width: 100%;
+    background-color: cornsilk !important; 
+    color:black;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+}
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: cornsilk;
+    color: black;
+    
+
+}
